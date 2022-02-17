@@ -1,0 +1,46 @@
+input[type='text']
+input[type='email']
+input[type='password']
+input[type='button']
+	@apply border rounded py-2 px-1 outline-0
+
+	&:focus
+		border-color #ccb
+		box-shadow inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(200, 200, 180, 0.6)
+
+label.__checkbox
+	input
+		@apply ml-2 mr-1
+
+input[type='button']
+	@apply cursor-pointer
+
+input[type='radio']
+	@apply outline-0
+	vertical-align -1px
+
+.__unit
+	@apply flex
+
+	input
+		border-top-right-radius 0
+		border-bottom-right-radius 0
+
+	span
+		@apply border border-l-0 rounded rounded-tl-none rounded-bl-none inline-block px-2 leading-10
+		color rgb(107 114 128)
+		background-color #f8f5f0
+
+.__unit_left
+	input
+		@apply rounded-tl-none rounded-bl-none rounded-tr rounded-br
+
+	span
+		@apply border-l border-r-0 rounded-tl rounded-bl rounded-tr-none rounded-br-none
+
+.__unit_both
+	input
+		@apply rounded-tl-none rounded-bl-none border-l-0 border-r-0
+
+	span
+		@apply border-l border-r rounded-tr-none rounded-br-none

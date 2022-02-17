@@ -1,0 +1,88 @@
+.__list
+	@apply border-collapse mx-auto
+
+	tbody
+		@apply bg-white
+
+	tr
+		&:hover
+			background-color #f9f8f0
+
+	th
+		@apply p-2 text-white whitespace-nowrap
+		background-color #444
+
+	td.__id
+		@apply w-20 text-right
+
+	td.__date
+		@apply w-48 text-center
+
+	td
+		@apply p-2 relative
+
+		a
+			@apply block
+
+		a:after,
+		a:before
+			@apply absolute inset-0
+			content ''
+
+.__required:before
+	content "・"
+	color rgb(204, 102, 34)
+
+.__edit
+	@apply bg-white mx-auto
+
+	th
+		@apply text-right py-1 px-2 font-normal
+		background-color #f9f8f0
+		min-width 180px
+		width 180px
+		max-width 180px
+
+	td
+		@apply py-1 px-2
+
+		textarea
+			@apply w-full
+
+		input.__date
+			@apply w-full text-center
+
+		input.__datetime
+			@apply text-center
+			width 150px
+
+		table
+			td
+				@apply p-1
+
+		.__list
+			@apply w-full m-0
+			background-color rgb(249 250 251)
+
+			th
+				@apply text-center text-current w-auto
+				min-width auto
+				max-width auto
+
+th.__header
+	@apply text-center text-white
+	background-color #444
+
+.__table_addition
+	@apply pt-2
+	@apply px-0 !important
+	background-color #f4f3ef
+
+.__require
+	@apply text-sm
+	color #a0aec0
+
+	&:before
+		content "・"
+		color rgb(204, 102, 34)
+
